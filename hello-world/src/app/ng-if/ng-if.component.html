@@ -1,0 +1,17 @@
+<h2>This Component Shows ng-if</h2>
+<p *ngIf="displayName; else elseBlock">
+    Hello
+</p>
+<ng-template #elseBlock>
+    <p>
+        Name is Hidden
+    </p>
+</ng-template>
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"> </div>
+<ng-template #thenBlock>
+    <p>This is ThenBlock</p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>This is ElseBlock</p>
+</ng-template>

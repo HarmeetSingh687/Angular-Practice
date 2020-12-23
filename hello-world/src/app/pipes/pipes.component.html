@@ -1,0 +1,37 @@
+<h2>This component shows implementation of Pipes</h2>
+<p>{{name}}</p>
+<p>{{name | lowercase}}</p>
+<p>{{name | uppercase}}</p>
+<p>{{message | titlecase}}</p>
+<p>{{name | slice:3}}</p>
+<p>{{name | slice:3:6}}</p>
+<p>{{person | json}}</p>
+
+<p>{{9.202 | number:'1.2-3'}}</p>
+<p>{{9.202 | number:'3.4-5'}}</p>
+<p>{{9.202 | number:'3.1-2'}}</p>
+
+<p>{{0.25 | percent}}</p>
+
+<p>{{0.25 | currency}}</p>
+<p>{{0.25 | currency: 'EUR': 'code' }}</p>
+
+<b>Short Pipe</b>
+<p>{{date}}</p>
+<p>{{date | date:'short'}}</p>
+<p>{{date | date:'shortDate'}}</p>
+<p>{{date | date:'shortTime'}}</p>
+
+<b>Medium Pipe</b>
+
+<p>{{date | date:'medium'}}</p>
+<p>{{date | date:'mediumDate'}}</p>
+<p>{{date | date:'mediumTime'}}</p>
+
+<b>Long Pipe</b>
+
+<p>{{date | date:'long'}}</p>
+<p>{{date | date:'longDate'}}</p>
+<p>{{date | date:'longTime'}}</p>
+
+
